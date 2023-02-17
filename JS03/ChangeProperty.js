@@ -6,7 +6,7 @@ let property={
 }
 function display(){
   property.name=['Happy Coder'];
-  obj={...property, ...property.name}
+  obj={...property}
   console.log(obj);
 }
 display();
