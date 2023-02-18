@@ -1,7 +1,7 @@
 let jour='lundi';
 if (jour='') {
-  samedi='weekend' ;
+  samedi=='weekend' ;
 } else{
-  samedi='weekday';
+  samedi=='weekday';
 }
 console.log(samedi);
