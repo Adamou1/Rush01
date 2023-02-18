@@ -10,3 +10,4 @@ function checkSignZero(num){
 checkSignZero(-1);
 checkSignZero(2);
 checkSignZero(0);
+module.exports= checkSignZero;

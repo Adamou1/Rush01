@@ -11,3 +11,4 @@ function checkNumber(num) {
 checkNumber(4);
 checkNumber(5);
 checkNumber(6);
+module.exports= checkNumber;

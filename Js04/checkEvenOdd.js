@@ -7,3 +7,4 @@ function checkEvenOdd(i=1){
 }
 checkEvenOdd(1);
 checkEvenOdd(2);
+module.exports= checkEvenOdd;

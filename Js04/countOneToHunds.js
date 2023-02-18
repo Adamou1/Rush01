@@ -5,3 +5,4 @@ console.log(i);
 }
 
 countOneToHunds();
+module.exports= countOneToHunds;
