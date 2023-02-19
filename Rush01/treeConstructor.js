@@ -1,26 +1,17 @@
-function treeConstructor(strArr){
- let parents={};
- let children={};
-for(let i=0; i<strArr.length; i++){
-    if(parents[parent]){
-       parents[parent].push(child);
-    }else{
-     parents[parent]=[child];
-    }
-    
-    if(parents[parent].length > 2){
+function TreeConstructor(strArr) { 
+  var arr = [ ], counts= {};
+  for (i=0;i < strArr.length;i++){
+    arr.push(strArr[i].match(/[0-9]/g)[0]);
+    arr.push(strArr[i].match(/[0-9]/g)[1]);
+  }
+  arr.forEach(function(x){counts[x] = (counts[x] || 0 ) + 1});
+  for(j in counts){
+    if (counts[j] >=4){
       return false;
     }
-    
-    if(children[child]){
-     return false;
-    } else {
-       children[child]=[parent];
-    }
+  }
+  return true;
 }
-return true;
+console.log( ["(1, 2)","(2, 4)","(5, 7)","(7, 2)","(9, 5)"]);
 
-} 
-strArr= ["(1, 2)","(2, 4)","(5, 7)","(7, 2)","(9, 5)"];
-console.log(strArr.length);
-treeConstructor();
+treeConstructor(strArr);
